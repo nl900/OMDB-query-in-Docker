@@ -1,7 +1,6 @@
 ## Option 1 Pull docker image from Docker Hub </br>
 To run
-In terminal run command, enter in <> API key for OMDB and give the container a name.
-Th
+In terminal run below command, enter in <> API key for OMDB and give the container a name.
 ```shell
  sudo docker run -ti -e OMDB_API_KEY=<api key> --name <container_name> nl900/omdb-query
  ```
