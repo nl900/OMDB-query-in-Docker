@@ -3,7 +3,7 @@ To run
 In terminal run command, enter in <> API key for OMDB and give the container a name.
 Th
 ```shell
- sudo docker run -ti --platform linux/amd64 -e OMDB_API_KEY=<api key> --name <container_name> nl900/omdb-query
+ sudo docker run -ti -e OMDB_API_KEY=<api key> --name <container_name> nl900/omdb-query
  ```
 Follow on screen instructions.
 Once you quit the application by pressing q, the docker container stops. To run again, run in terminal
