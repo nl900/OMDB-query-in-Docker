@@ -3,7 +3,7 @@ To run
 In terminal run command, enter in <> API key for OMDB and give the container a name.
 Th
 ```shell
- docker run -ti --platform linux/amd64 -e OMDB_API_KEY="<api key>" --name <container_name> nl900/omdb-query
+ docker run -ti --platform linux/amd64 -e OMDB_API_KEY=<api key> --name <container_name> nl900/omdb-query
  ```
 Follow on screen instructions
 
@@ -15,7 +15,7 @@ In the app dir, open terminal and run to build the image giving inside <> a name
 
 Run the image interactively, enter in <> API key for OMDB and give a name to the container and the image name you ad previously
 ```shell
-docker run -ti -e OMDB_API_KEY= "<api key>" --name <container_name> <img_name>
+docker run -ti -e OMDB_API_KEY=<api key> --name <container_name> <img_name>
 ```
 
 ## Re run</br>
