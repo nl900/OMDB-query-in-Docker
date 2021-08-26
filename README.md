@@ -1,14 +1,26 @@
-** To build 
+##Option 1 Pull docker image from Docker Hub##
+To run
+In terminal run command, enter in <> API key for OMDB and give the container a name
 ```shell
- docker build -t <cisco_img> . 
+ docker run -ti --platform linux/amd64 -e OMDB_API_KEY="<api key>" --name <container_name> nl900/omdb-query
+ ```
+Follow instructions on screen
+
+##Option 2 Build the image locally##
+In the app dir, open terminal and run to build the image giving inside <> a name for the image
+```shell
+ docker build -t <img_name> . 
  ```
 
-run interactively
+Run the image interactively, enter in <> API key for OMDB and give a name to the container and the image name you ad previously
 ```shell
-docker run -ti -e OMDB_API_KEY= "<api key>" --name <cisco_container> <cisco_img>
+docker run -ti -e OMDB_API_KEY= "<api key>" --name <container_name> <img_name>
 ```
 
-re-running it (no need to enter api key again)
+##Re run##
+Once you press q in the application, the docker container stops.
+To re-run it , need to start the docker container again.
+In terminal, run the command below, there's no need to give the API key again
 ```shell
-docker start -i <cisco_container>
+docker start -i <container_name>
 ```
