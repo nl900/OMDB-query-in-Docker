@@ -1,4 +1,4 @@
-###Option 1 Pull docker image from Docker Hub###</br>
+###Option 1 Pull docker image from Docker Hub </br>
 To run
 In terminal run command, enter in <> API key for OMDB and give the container a name.
 Th
