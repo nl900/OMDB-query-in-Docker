@@ -17,7 +17,7 @@ In the app dir, open terminal and run to build the image giving inside <> a name
  sudo docker build -t <img_name> . 
  ```
 
-Run the image interactively, enter in <> API key for OMDB and give a name to the container and the image name you ad previously
+Run the image interactively, enter in <> API key for OMDB and give a name to the container and the image name you added previously
 ```shell
 sudo docker run -ti -e OMDB_API_KEY=<api key> --name <container_name> <img_name>
 ```
